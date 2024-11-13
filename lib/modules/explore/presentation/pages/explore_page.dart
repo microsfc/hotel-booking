@@ -69,11 +69,11 @@ class _ExplorePageState extends State<ExplorePage>
             transform: new Matrix4.translationValues(
                 0.0, 40 * (1.0 - widget.animationController!.value), 0.0),
             child: Scaffold(
-              backgroundColor: AppTheme.getTheme().backgroundColor,
+              backgroundColor: AppTheme.getTheme().colorScheme.background,
               body: Stack(
                 children: <Widget>[
                   Container(
-                    color: AppTheme.getTheme().backgroundColor,
+                    color: AppTheme.getTheme().colorScheme.background,
                     child: ListView.builder(
                       controller: controller,
                       itemCount: 4,
@@ -136,8 +136,8 @@ class _ExplorePageState extends State<ExplorePage>
                       decoration: BoxDecoration(
                           gradient: LinearGradient(
                         colors: [
-                          AppTheme.getTheme().backgroundColor.withOpacity(0.4),
-                          AppTheme.getTheme().backgroundColor.withOpacity(0.0),
+                          AppTheme.getTheme().colorScheme.background.withOpacity(0.4),
+                          AppTheme.getTheme().colorScheme.background.withOpacity(0.0),
                         ],
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter,
@@ -270,7 +270,7 @@ class _ExplorePageState extends State<ExplorePage>
       padding: const EdgeInsets.only(left: 24, right: 24, top: 16),
       child: Container(
         decoration: BoxDecoration(
-          color: AppTheme.getTheme().backgroundColor,
+          color: AppTheme.getTheme().colorScheme.background,
           borderRadius: BorderRadius.all(Radius.circular(38)),
           // border: Border.all(
           //   color: HexColor("#757575").withOpacity(0.6),

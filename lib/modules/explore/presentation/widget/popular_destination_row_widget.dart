@@ -74,7 +74,7 @@ class PopularDestinationRowWidget extends StatelessWidget {
                                       style: TextStyle(
                                         fontWeight: FontWeight.w600,
                                         fontSize: 24,
-                                        color: AppTheme.getTheme().backgroundColor,
+                                        color: AppTheme.getTheme().colorScheme.background,
                                       ),
                                     ),
                                   ),

@@ -73,11 +73,11 @@ class _HotelDetailsPageState extends State<HotelDetailsPage>
   Widget build(BuildContext context) {
     imageHeight = MediaQuery.of(context).size.height;
     return Scaffold(
-      backgroundColor: AppTheme.getTheme().backgroundColor,
+      backgroundColor: AppTheme.getTheme().colorScheme.background,
       body: Stack(
         children: <Widget>[
           Container(
-            color: AppTheme.getTheme().backgroundColor,
+            color: AppTheme.getTheme().colorScheme.background,
             child: ListView(
               controller: scrollController,
               padding: EdgeInsets.only(top: 24 + imageHeight),
@@ -284,7 +284,7 @@ class _HotelDetailsPageState extends State<HotelDetailsPage>
                           padding: const EdgeInsets.all(12.0),
                           child: Icon(
                             FontAwesomeIcons.mapPin,
-                            color: AppTheme.getTheme().backgroundColor,
+                            color: AppTheme.getTheme().colorScheme.background,
                             size: 28,
                           ),
                         ),
@@ -338,7 +338,7 @@ class _HotelDetailsPageState extends State<HotelDetailsPage>
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Icon(Icons.arrow_back,
-                                color: AppTheme.getTheme().backgroundColor),
+                                color: AppTheme.getTheme().colorScheme.background),
                           ),
                         ),
                       ),
@@ -355,7 +355,7 @@ class _HotelDetailsPageState extends State<HotelDetailsPage>
                         width: AppBar().preferredSize.height - 8,
                         height: AppBar().preferredSize.height - 8,
                         decoration: BoxDecoration(
-                            color: AppTheme.getTheme().backgroundColor,
+                            color: AppTheme.getTheme().colorScheme.background,
                             shape: BoxShape.circle),
                         child: InkWell(
                           borderRadius: BorderRadius.all(
@@ -574,7 +574,7 @@ class _HotelDetailsPageState extends State<HotelDetailsPage>
                   fontWeight: FontWeight.w600,
                   fontSize: 22,
                   color: isInList
-                      ? AppTheme.getTheme().textTheme.bodyText1!.color
+                      ? AppTheme.getTheme().textTheme.bodyLarge!.color
                       : Colors.white,
                 ),
               ),
@@ -650,7 +650,7 @@ class _HotelDetailsPageState extends State<HotelDetailsPage>
                 fontWeight: FontWeight.w600,
                 fontSize: 22,
                 color: isInList
-                    ? AppTheme.getTheme().textTheme.bodyText1!.color
+                    ? AppTheme.getTheme().textTheme.bodyLarge!.color
                     : Colors.white,
               ),
             ),

@@ -20,7 +20,7 @@ class _SplashPageState extends State<SplashPage> {
               foregroundDecoration: !AppTheme.isDark
                   ? BoxDecoration(
                       color:
-                          AppTheme.getTheme().backgroundColor.withOpacity(0.4))
+                          AppTheme.getTheme().colorScheme.background.withOpacity(0.4))
                   : null,
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height,

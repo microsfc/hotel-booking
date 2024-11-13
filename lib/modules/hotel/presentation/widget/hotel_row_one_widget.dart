@@ -68,7 +68,7 @@ class HotelRowOneWidget extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                color: AppTheme.getTheme().backgroundColor,
+                                color: AppTheme.getTheme().colorScheme.background,
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -214,7 +214,7 @@ class HotelRowOneWidget extends StatelessWidget {
                             right: 8,
                             child: Container(
                               decoration: BoxDecoration(
-                                  color: AppTheme.getTheme().backgroundColor,
+                                  color: AppTheme.getTheme().colorScheme.background,
                                   shape: BoxShape.circle),
                               child: Material(
                                 color: Colors.transparent,

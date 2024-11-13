@@ -30,7 +30,7 @@ class _SearchPageState extends State<SearchPage> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppTheme.getTheme().backgroundColor,
+      backgroundColor: AppTheme.getTheme().colorScheme.background,
       body: InkWell(
         splashColor: Colors.transparent,
         highlightColor: Colors.transparent,
@@ -54,7 +54,7 @@ class _SearchPageState extends State<SearchPage> with TickerProviderStateMixin {
                           padding: const EdgeInsets.only(left: 24, right: 24, top: 16, bottom: 16),
                           child: Container(
                             decoration: BoxDecoration(
-                              color: AppTheme.getTheme().backgroundColor,
+                              color: AppTheme.getTheme().colorScheme.background,
                               borderRadius: BorderRadius.all(Radius.circular(38)),
                               // border: Border.all(
                               //   color: HexColor("#757575").withOpacity(0.6),
@@ -266,7 +266,7 @@ class SerchView extends StatelessWidget {
                 aspectRatio: 0.85,
                 child: Container(
                   decoration: BoxDecoration(
-                    color: AppTheme.getTheme().backgroundColor,
+                    color: AppTheme.getTheme().colorScheme.background,
                     borderRadius: BorderRadius.all(Radius.circular(16.0)),
                     boxShadow: <BoxShadow>[
                       BoxShadow(

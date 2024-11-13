@@ -12,7 +12,7 @@ class _InvitePageState extends State<InvitePage> {
   Widget build(BuildContext context) {
     return Container(
       child: Scaffold(
-        backgroundColor: AppTheme.getTheme().backgroundColor,
+        backgroundColor: AppTheme.getTheme().colorScheme.background,
         body: Stack(
           children: <Widget>[
             Container(

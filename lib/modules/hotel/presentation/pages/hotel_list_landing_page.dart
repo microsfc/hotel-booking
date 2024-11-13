@@ -160,7 +160,7 @@ class _HotelListLandingPageState extends State<HotelListLandingPage>
                         child: Stack(
                           children: <Widget>[
                             Container(
-                              color: AppTheme.getTheme().backgroundColor,
+                              color: AppTheme.getTheme().colorScheme.background,
                               child: ListView.builder(
                                 controller: scrollController,
                                 itemCount: hotelList.length,
@@ -269,7 +269,7 @@ class _HotelListLandingPageState extends State<HotelListLandingPage>
             decoration: BoxDecoration(
               color: hotelList[i].isSelected
                   ? AppTheme.getTheme().primaryColor
-                  : AppTheme.getTheme().backgroundColor,
+                  : AppTheme.getTheme().colorScheme.background,
               borderRadius: BorderRadius.all(Radius.circular(24.0)),
               boxShadow: <BoxShadow>[
                 BoxShadow(
@@ -300,7 +300,7 @@ class _HotelListLandingPageState extends State<HotelListLandingPage>
                     "\$${hotelList[i].perNight}",
                     style: TextStyle(
                         color: hotelList[i].isSelected
-                            ? AppTheme.getTheme().backgroundColor
+                            ? AppTheme.getTheme().colorScheme.background
                             : AppTheme.getTheme().primaryColor,
                         fontSize: 18,
                         fontWeight: FontWeight.w600),
@@ -318,7 +318,7 @@ class _HotelListLandingPageState extends State<HotelListLandingPage>
   Widget getListUI() {
     return Container(
       decoration: BoxDecoration(
-        color: AppTheme.getTheme().backgroundColor,
+        color: AppTheme.getTheme().colorScheme.background,
         boxShadow: <BoxShadow>[
           BoxShadow(
               color: AppTheme.getTheme().dividerColor,
@@ -527,7 +527,7 @@ class _HotelListLandingPageState extends State<HotelListLandingPage>
               padding: const EdgeInsets.only(right: 16, top: 8, bottom: 8),
               child: Container(
                 decoration: BoxDecoration(
-                  color: AppTheme.getTheme().backgroundColor,
+                  color: AppTheme.getTheme().colorScheme.background,
                   borderRadius: BorderRadius.all(
                     Radius.circular(38.0),
                   ),
@@ -596,7 +596,7 @@ class _HotelListLandingPageState extends State<HotelListLandingPage>
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Icon(FontAwesomeIcons.search,
-                      size: 20, color: AppTheme.getTheme().backgroundColor),
+                      size: 20, color: AppTheme.getTheme().colorScheme.background),
                 ),
               ),
             ),
@@ -616,7 +616,7 @@ class _HotelListLandingPageState extends State<HotelListLandingPage>
           child: Container(
             height: 24,
             decoration: BoxDecoration(
-              color: AppTheme.getTheme().backgroundColor,
+              color: AppTheme.getTheme().colorScheme.background,
               boxShadow: <BoxShadow>[
                 BoxShadow(
                     color: AppTheme.getTheme().dividerColor,
@@ -627,7 +627,7 @@ class _HotelListLandingPageState extends State<HotelListLandingPage>
           ),
         ),
         Container(
-          color: AppTheme.getTheme().backgroundColor,
+          color: AppTheme.getTheme().colorScheme.background,
           child: Padding(
             padding:
                 const EdgeInsets.only(left: 16, right: 16, top: 8, bottom: 4),
@@ -726,7 +726,7 @@ class _HotelListLandingPageState extends State<HotelListLandingPage>
   Widget getAppBarUI() {
     return Container(
       decoration: BoxDecoration(
-        color: AppTheme.getTheme().backgroundColor,
+        color: AppTheme.getTheme().colorScheme.background,
         boxShadow: <BoxShadow>[
           BoxShadow(
               color: AppTheme.getTheme().dividerColor,

@@ -46,7 +46,7 @@ class HotelRowTwoWidget extends StatelessWidget {
                     Container(
                       height: 150,
                       decoration: BoxDecoration(
-                        color: AppTheme.getTheme().backgroundColor,
+                        color: AppTheme.getTheme().colorScheme.background,
                         borderRadius: BorderRadius.all(Radius.circular(16.0)),
                         boxShadow: <BoxShadow>[
                           BoxShadow(

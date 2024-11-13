@@ -64,7 +64,7 @@ class _MyAppState extends State<MyApp> {
     ));
     return Container(
       key: key,
-      color: AppTheme.getTheme().backgroundColor,
+      color: AppTheme.getTheme().colorScheme.background,
       child: MaterialApp(
           localizationsDelegates: [
             S.delegate,

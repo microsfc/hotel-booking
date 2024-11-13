@@ -60,7 +60,7 @@ class _CalendarPopupWidgetState extends State<CalendarPopupWidget>
       child: Scaffold(
         backgroundColor: AppTheme.isDark
             ? Colors.transparent
-            : AppTheme.getTheme().backgroundColor.withOpacity(0.6),
+            : AppTheme.getTheme().colorScheme.background.withOpacity(0.6),
         body: AnimatedBuilder(
           animation: animationController,
           builder: (BuildContext context, Widget? child) {
@@ -80,7 +80,7 @@ class _CalendarPopupWidgetState extends State<CalendarPopupWidget>
                     padding: const EdgeInsets.all(24.0),
                     child: Container(
                       decoration: BoxDecoration(
-                        color: AppTheme.getTheme().backgroundColor,
+                        color: AppTheme.getTheme().colorScheme.background,
                         borderRadius: BorderRadius.all(Radius.circular(24.0)),
                         boxShadow: <BoxShadow>[
                           BoxShadow(

@@ -15,7 +15,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
   Widget build(BuildContext context) {
     return Container(
       child: Scaffold(
-        backgroundColor: AppTheme.getTheme().backgroundColor,
+        backgroundColor: AppTheme.getTheme().colorScheme.background,
         body: InkWell(
           splashColor: Colors.transparent,
           highlightColor: Colors.transparent,
@@ -149,7 +149,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
                           padding: const EdgeInsets.all(8.0),
                           child: Icon(
                             Icons.camera_alt,
-                            color: AppTheme.getTheme().backgroundColor,
+                            color: AppTheme.getTheme().colorScheme.background,
                             size: 18,
                           ),
                         ),

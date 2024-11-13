@@ -15,7 +15,7 @@ class _HelpCenterPageState extends State<HelpCenterPage> {
   Widget build(BuildContext context) {
     List<SettingEntity> helpSearchList = SettingEntity.helpSearchList;
     return Scaffold(
-      backgroundColor: AppTheme.getTheme().backgroundColor,
+      backgroundColor: AppTheme.getTheme().colorScheme.background,
       body: InkWell(
         splashColor: Colors.transparent,
         highlightColor: Colors.transparent,
@@ -121,7 +121,7 @@ class _HelpCenterPageState extends State<HelpCenterPage> {
                   },
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Icon(Icons.arrow_back, color: AppTheme.getTheme().backgroundColor),
+                    child: Icon(Icons.arrow_back, color: AppTheme.getTheme().colorScheme.background),
                   ),
                 ),
               ),
@@ -132,14 +132,14 @@ class _HelpCenterPageState extends State<HelpCenterPage> {
           padding: const EdgeInsets.only(top: 4, left: 24),
           child: Text(
             S.of(context).howCanWeHelp,
-            style: new TextStyle(fontSize: 22, fontWeight: FontWeight.w700, color: AppTheme.getTheme().backgroundColor),
+            style: new TextStyle(fontSize: 22, fontWeight: FontWeight.w700, color: AppTheme.getTheme().colorScheme.background),
           ),
         ),
         Padding(
           padding: const EdgeInsets.only(left: 24, right: 24, top: 16),
           child: Container(
             decoration: BoxDecoration(
-              color: AppTheme.getTheme().backgroundColor,
+              color: AppTheme.getTheme().colorScheme.background,
               borderRadius: BorderRadius.all(Radius.circular(38)),
               // border: Border.all(
               //   color: HexColor("#757575").withOpacity(0.6),

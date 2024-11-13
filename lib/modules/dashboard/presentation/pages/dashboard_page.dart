@@ -49,7 +49,7 @@ class _DashboardPageState extends State<DashboardPage>
   Widget build(BuildContext context) {
     return Container(
       child: Scaffold(
-        backgroundColor: AppTheme.getTheme().backgroundColor,
+        backgroundColor: AppTheme.getTheme().colorScheme.background,
         bottomNavigationBar: Container(
             height: 58 + MediaQuery.of(context).padding.bottom,
             child: getBottomBarUI(bottomBarType)),
@@ -89,7 +89,7 @@ class _DashboardPageState extends State<DashboardPage>
   Widget getBottomBarUI(BottomBarType tabType) {
     return Container(
       decoration: BoxDecoration(
-        color: AppTheme.getTheme().backgroundColor,
+        color: AppTheme.getTheme().colorScheme.background,
         boxShadow: <BoxShadow>[
           BoxShadow(
             color: AppTheme.getTheme().dividerColor,

@@ -35,7 +35,7 @@ class _ProfilePageState extends State<ProfilePage> {
           child: new Transform(
             transform: new Matrix4.translationValues(0.0, 40 * (1.0 - widget.animationController!.value), 0.0),
             child: Scaffold(
-              backgroundColor: AppTheme.getTheme().backgroundColor,
+              backgroundColor: AppTheme.getTheme().colorScheme.background,
               body: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,

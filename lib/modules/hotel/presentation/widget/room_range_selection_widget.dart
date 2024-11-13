@@ -76,7 +76,7 @@ class _RoomRangeSelectionWidgetState extends State<RoomRangeSelectionWidget>
                     padding: const EdgeInsets.all(24.0),
                     child: Container(
                       decoration: BoxDecoration(
-                        color: AppTheme.getTheme().backgroundColor,
+                        color: AppTheme.getTheme().colorScheme.background,
                         borderRadius: BorderRadius.all(Radius.circular(24.0)),
                         boxShadow: <BoxShadow>[
                           BoxShadow(

@@ -23,7 +23,7 @@ class _FiltersPageState extends State<FiltersPage> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: AppTheme.getTheme().backgroundColor,
+      color: AppTheme.getTheme().colorScheme.background,
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: Column(

@@ -52,7 +52,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                         padding: const EdgeInsets.only(left: 24, right: 24),
                         child: Container(
                           decoration: BoxDecoration(
-                            color: AppTheme.getTheme().backgroundColor,
+                            color: AppTheme.getTheme().colorScheme.background,
                             borderRadius: BorderRadius.all(Radius.circular(38)),
                             // border: Border.all(
                             //   color: HexColor("#757575").withOpacity(0.6),

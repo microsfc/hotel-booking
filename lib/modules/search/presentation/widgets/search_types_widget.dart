@@ -100,7 +100,7 @@ class _SearchTypesState extends State<SearchTypes> with TickerProviderStateMixin
                                   child: Center(
                                     child: Icon(
                                       FontAwesomeIcons.check,
-                                      color: AppTheme.getTheme().backgroundColor,
+                                      color: AppTheme.getTheme().colorScheme.background,
                                     ),
                                   ),
                                 ),
